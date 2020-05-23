@@ -1,0 +1,16 @@
+{
+  "name": "bot-daddy-kane",
+  "version": "0.1.0",
+  "description": "KidQueb's Twitch bot.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/pm2 start index.js",
+    "stop": "./node_modules/.bin/pm2 stop index.js",
+    "dev": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pm2": "^4.4.0",
+    "tmi.js": "^1.5.0"
+  }
+}
