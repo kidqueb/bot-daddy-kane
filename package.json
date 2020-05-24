@@ -10,7 +10,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^2.14.0",
     "pm2": "^4.4.0",
+    "polka": "^0.5.2",
+    "socket.io": "^2.3.0",
     "tmi.js": "^1.5.0"
   }
 }

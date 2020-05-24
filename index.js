@@ -3,7 +3,10 @@ const tmi = require('tmi.js');
 
 const config = require('./config.json');
 
-// require all of our commands
+/**
+ * Create an object containing all of our commands
+ * from the `./commands` directory.
+ */
 let COMMANDS = {}
 readdirSync(__dirname + '/commands').forEach(file => {
   if (file.match(/\.js$/) !== null && file !== 'index.js') {
@@ -12,7 +15,9 @@ readdirSync(__dirname + '/commands').forEach(file => {
   }
 });
 
-// setup the irc client
+/**
+ * Setup and intialize irc client
+ */
 const client = new tmi.Client({
 	options: { debug: true },
 	connection: {
